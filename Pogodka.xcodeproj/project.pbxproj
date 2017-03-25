@@ -57,10 +57,10 @@
 			isa = PBXGroup;
 			children = (
 				62D4B9DC1E86D10C00B84008 /* OpenWeatherMap.swift */,
-				62C121C61E1E99690013A055 /* AppDelegate.swift */,
 				62C121C81E1E99690013A055 /* ViewController.swift */,
 				62C121CA1E1E99690013A055 /* Main.storyboard */,
 				62C121CD1E1E99690013A055 /* Assets.xcassets */,
+				62C121C61E1E99690013A055 /* AppDelegate.swift */,
 				62C121CF1E1E99690013A055 /* LaunchScreen.storyboard */,
 				62C121D21E1E99690013A055 /* Info.plist */,
 			);

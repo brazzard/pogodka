@@ -11,28 +11,21 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet var iconImageView: UIImageView!
-    @IBOutlet var city: UITextView!
-    @IBOutlet var desc: UITextView!
-    @IBOutlet var temp: UITextView!
-    
-    
+    @IBOutlet var city: UILabel!
+    @IBOutlet var desc: UILabel!
+    @IBOutlet var temp: UILabel!
+
     let url = "http://api.openweathermap.org/data/2.5/weather?q=Vinnytsya,UA&appid=d110b655383be2152d16c8f162745124"
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         let stringURL = URL(string: url)!
-        let weatherObject = NSData(contentsOf: stringURL)
-        //print(weatherObject)
         
-        let session = URLSession.shared
-        let task = session.downloadTask(with: stringURL) { (location: URL?, response: URLResponse?, error: Error?) -> Void
+        URLSession.shared.downloadTask(with: stringURL) { (location: URL?, response: URLResponse?, error: Error?) -> Void
             in
             
-            if error != nil {
-                print(error)
-            } else {
+            guard error == nil else { return }
                 do {
                     
                     let weatherData = NSData(contentsOf: stringURL)
@@ -40,25 +33,17 @@ class ViewController: UIViewController {
                     
                     let weather = OpenWeatherMap(weatherJson: weatherJson)
                     
+                        DispatchQueue.main.async {
+                            self.iconImageView.image = weather.icon!
+                            self.city.text = weather.nameCity
+                            self.desc.text = weather.description
+                            self.temp.text = String(weather.temp)
+                        }
                     
-                    
-                    DispatchQueue.main.async {
-                        self.iconImageView.image = weather.icon!
-                        self.city.text = weather.nameCity
-                        self.desc.text = weather.description
-                        self.temp.text = String(weather.temp)
-                    }
-                    
-                    
-                    
-                    } catch let error as NSError {
+                }   catch let error as NSError {
                         print(error)
                     }
-            }
-        
-        }
-        
-        task.resume()
+        }.resume()
     }
 
     override func didReceiveMemoryWarning() {
