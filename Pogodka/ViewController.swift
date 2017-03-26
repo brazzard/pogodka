@@ -22,29 +22,30 @@ class ViewController: UIViewController {
         
         let stringURL = URL(string: url)!
         
-        URLSession.shared.downloadTask(with: stringURL) { (location: URL?, response: URLResponse?, error: Error?) -> Void
+        URLSession.shared.dataTask(with: stringURL) { location, response, error
             in
             
             guard error == nil else { return }
-                do {
-                    
-                    let weatherData = NSData(contentsOf: stringURL)
-                    let weatherJson = try JSONSerialization.jsonObject(with: weatherData! as Data) as! NSDictionary
-                    
-                    let weather = OpenWeatherMap(weatherJson: weatherJson)
-                    
-                        DispatchQueue.main.async {
-                            self.iconImageView.image = weather.icon!
-                            self.city.text = weather.nameCity
-                            self.desc.text = weather.description
-                            self.temp.text = String(weather.temp)
-                        }
-                    
-                }   catch let error as NSError {
-                        print(error)
-                    }
+            do {
+                
+                let weatherData = NSData(contentsOf: stringURL)
+                let weatherJson = try JSONSerialization.jsonObject(with: weatherData! as Data) as! NSDictionary
+                
+                let weather = OpenWeatherMap(weatherJson: weatherJson)
+                
+                DispatchQueue.main.async {
+                    self.iconImageView.image = weather.icon
+                    self.city.text = weather.nameCity
+                    self.desc.text = weather.description
+                    self.temp.text = weather.temp
+                }
+                
+            }   catch let error as NSError {
+                    print(error)
+                }
         }.resume()
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
