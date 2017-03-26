@@ -10,22 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var iconImageView: UIImageView!
+    // Nice style - using incapsulation for vars & outlets
+    @IBOutlet private var iconImageView: UIImageView!
     @IBOutlet var city: UILabel!
     @IBOutlet var desc: UILabel!
     @IBOutlet var temp: UILabel!
-
+    
     let url = "http://api.openweathermap.org/data/2.5/weather?q=Vinnytsya,UA&appid=d110b655383be2152d16c8f162745124"
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let stringURL = URL(string: url)!
         
-        URLSession.shared.dataTask(with: stringURL) { location, response, error
-            in
+        // TODO: IV
+        // Replace api request to separated func and call it in viewWillAppear (UI outlets can be nil in viewDidLoad)
+        URLSession.shared.dataTask(with: stringURL) { location, response, error in
             
             guard error == nil else { return }
+            
             do {
                 
                 let weatherData = NSData(contentsOf: stringURL)
@@ -34,24 +37,23 @@ class ViewController: UIViewController {
                 let weather = OpenWeatherMap(weatherJson: weatherJson)
                 
                 DispatchQueue.main.async {
-                    self.iconImageView.image = weather.icon
+                    self.iconImageView.image = weather.icon!
                     self.city.text = weather.nameCity
                     self.desc.text = weather.description
-                    self.temp.text = weather.temp
+                    self.temp.text = String(weather.temp)
                 }
                 
             }   catch let error as NSError {
-                    print(error)
-                }
-        }.resume()
+                print(error)
+            }
+            }.resume()
     }
     
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
