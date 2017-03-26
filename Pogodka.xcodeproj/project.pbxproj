@@ -7,23 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		62C121C71E1E99690013A055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C121C61E1E99690013A055 /* AppDelegate.swift */; };
-		62C121C91E1E99690013A055 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C121C81E1E99690013A055 /* ViewController.swift */; };
-		62C121CC1E1E99690013A055 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C121CA1E1E99690013A055 /* Main.storyboard */; };
-		62C121CE1E1E99690013A055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62C121CD1E1E99690013A055 /* Assets.xcassets */; };
-		62C121D11E1E99690013A055 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C121CF1E1E99690013A055 /* LaunchScreen.storyboard */; };
-		62D4B9DD1E86D10C00B84008 /* OpenWeatherMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D4B9DC1E86D10C00B84008 /* OpenWeatherMap.swift */; };
+		775D04A61E87C1AE00C93DE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775D04981E87C1AE00C93DE0 /* AppDelegate.swift */; };
+		775D04A71E87C1AE00C93DE0 /* OpenWeatherMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775D049A1E87C1AE00C93DE0 /* OpenWeatherMap.swift */; };
+		775D04A81E87C1AE00C93DE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 775D049C1E87C1AE00C93DE0 /* Assets.xcassets */; };
+		775D04A91E87C1AE00C93DE0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 775D049D1E87C1AE00C93DE0 /* Info.plist */; };
+		775D04AA1E87C1AE00C93DE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 775D049F1E87C1AE00C93DE0 /* LaunchScreen.storyboard */; };
+		775D04AB1E87C1AE00C93DE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 775D04A11E87C1AE00C93DE0 /* Main.storyboard */; };
+		775D04AC1E87C1AE00C93DE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775D04A51E87C1AE00C93DE0 /* ViewController.swift */; };
+		775D04AE1E87C22F00C93DE0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775D04AD1E87C22F00C93DE0 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		62C121C31E1E99690013A055 /* Pogodka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pogodka.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		62C121C61E1E99690013A055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		62C121C81E1E99690013A055 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		62C121CB1E1E99690013A055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		62C121CD1E1E99690013A055 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		62C121D01E1E99690013A055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		62C121D21E1E99690013A055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62D4B9DC1E86D10C00B84008 /* OpenWeatherMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenWeatherMap.swift; sourceTree = "<group>"; };
+		775D04981E87C1AE00C93DE0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		775D049A1E87C1AE00C93DE0 /* OpenWeatherMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenWeatherMap.swift; sourceTree = "<group>"; };
+		775D049C1E87C1AE00C93DE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		775D049D1E87C1AE00C93DE0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		775D04A01E87C1AE00C93DE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		775D04A21E87C1AE00C93DE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		775D04A51E87C1AE00C93DE0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		775D04AD1E87C22F00C93DE0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +59,64 @@
 		62C121C51E1E99690013A055 /* Pogodka */ = {
 			isa = PBXGroup;
 			children = (
-				62D4B9DC1E86D10C00B84008 /* OpenWeatherMap.swift */,
-				62C121C81E1E99690013A055 /* ViewController.swift */,
-				62C121CA1E1E99690013A055 /* Main.storyboard */,
-				62C121CD1E1E99690013A055 /* Assets.xcassets */,
-				62C121C61E1E99690013A055 /* AppDelegate.swift */,
-				62C121CF1E1E99690013A055 /* LaunchScreen.storyboard */,
-				62C121D21E1E99690013A055 /* Info.plist */,
+				775D04971E87C1AE00C93DE0 /* Logic */,
+				775D04991E87C1AE00C93DE0 /* Model */,
+				775D049B1E87C1AE00C93DE0 /* Resources */,
+				775D049E1E87C1AE00C93DE0 /* Storyboards */,
+				775D04A31E87C1AE00C93DE0 /* ViewControllers */,
 			);
 			path = Pogodka;
+			sourceTree = "<group>";
+		};
+		775D04971E87C1AE00C93DE0 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				775D04981E87C1AE00C93DE0 /* AppDelegate.swift */,
+				775D04AD1E87C22F00C93DE0 /* Constants.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		775D04991E87C1AE00C93DE0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				775D049A1E87C1AE00C93DE0 /* OpenWeatherMap.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		775D049B1E87C1AE00C93DE0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				775D049C1E87C1AE00C93DE0 /* Assets.xcassets */,
+				775D049D1E87C1AE00C93DE0 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		775D049E1E87C1AE00C93DE0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				775D049F1E87C1AE00C93DE0 /* LaunchScreen.storyboard */,
+				775D04A11E87C1AE00C93DE0 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		775D04A31E87C1AE00C93DE0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				775D04A41E87C1AE00C93DE0 /* ViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		775D04A41E87C1AE00C93DE0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				775D04A51E87C1AE00C93DE0 /* ViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,9 +179,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62C121D11E1E99690013A055 /* LaunchScreen.storyboard in Resources */,
-				62C121CE1E1E99690013A055 /* Assets.xcassets in Resources */,
-				62C121CC1E1E99690013A055 /* Main.storyboard in Resources */,
+				775D04AB1E87C1AE00C93DE0 /* Main.storyboard in Resources */,
+				775D04A81E87C1AE00C93DE0 /* Assets.xcassets in Resources */,
+				775D04AA1E87C1AE00C93DE0 /* LaunchScreen.storyboard in Resources */,
+				775D04A91E87C1AE00C93DE0 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,29 +193,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62D4B9DD1E86D10C00B84008 /* OpenWeatherMap.swift in Sources */,
-				62C121C91E1E99690013A055 /* ViewController.swift in Sources */,
-				62C121C71E1E99690013A055 /* AppDelegate.swift in Sources */,
+				775D04AC1E87C1AE00C93DE0 /* ViewController.swift in Sources */,
+				775D04A71E87C1AE00C93DE0 /* OpenWeatherMap.swift in Sources */,
+				775D04A61E87C1AE00C93DE0 /* AppDelegate.swift in Sources */,
+				775D04AE1E87C22F00C93DE0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		62C121CA1E1E99690013A055 /* Main.storyboard */ = {
+		775D049F1E87C1AE00C93DE0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				62C121CB1E1E99690013A055 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		62C121CF1E1E99690013A055 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				62C121D01E1E99690013A055 /* Base */,
+				775D04A01E87C1AE00C93DE0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		775D04A11E87C1AE00C93DE0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				775D04A21E87C1AE00C93DE0 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -266,7 +320,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 26X7LWMZ8N;
-				INFOPLIST_FILE = Pogodka/Info.plist;
+				INFOPLIST_FILE = Pogodka/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = skd.Pogodka;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -280,7 +335,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 26X7LWMZ8N;
-				INFOPLIST_FILE = Pogodka/Info.plist;
+				INFOPLIST_FILE = Pogodka/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = skd.Pogodka;
 				PRODUCT_NAME = "$(TARGET_NAME)";

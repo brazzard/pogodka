@@ -11,20 +11,21 @@ import UIKit
 
 class OpenWeatherMap {
     
-    var nameCity: String
-    var temp: String
-    var description: String
-    var icon: UIImage?
-    let celsiusDiff = 273
-    let celsius = "˚C"
+    var nameCity    : String!
+    var temp        : String!
+    var description : String!
+    var icon        : UIImage!
     
-    init(weatherJson:NSDictionary) {
+    init(weatherJson: NSDictionary) {
         
-        nameCity = weatherJson["name"] as! String
+        // TODO: IV - Replace string keys with constants        
+        nameCity = weatherJson[Key.OpenWeather.name] as! String
         
         let main = weatherJson["main"] as! NSDictionary
         let kelvinTemp = main["temp"] as! Int
-        temp = String(kelvinTemp - celsiusDiff) + celsius
+        let celsTemp = Temperature.Celsius(absoluteValue: kelvinTemp)
+        
+        temp = "\(celsTemp.value)\(celsTemp.symbol)"
         
         let weather = weatherJson["weather"] as! NSArray
         let zero = weather[0] as! NSDictionary
