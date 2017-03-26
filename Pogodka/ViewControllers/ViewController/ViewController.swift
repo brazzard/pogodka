@@ -25,8 +25,7 @@ class ViewController: UIViewController {
         
         // TODO: IV
         // Replace api request to separated func and call it in viewWillAppear (UI outlets can be nil in viewDidLoad)
-        // replace downloadTask with dataTask
-        URLSession.shared.downloadTask(with: stringURL) { (location: URL?, response: URLResponse?, error: Error?) -> Void in
+        URLSession.shared.dataTask(with: stringURL) { location, response, error in
             
             guard error == nil else { return }
             
